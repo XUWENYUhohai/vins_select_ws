@@ -1,0 +1,21 @@
+<launch>
+    <node name="rvizvisualisation" pkg="rviz" type="rviz" output="log" args="-d $(find vins)/../config/vins_rviz_config.rviz" />
+    <!-- <node pkg="tf" type="static_transform_publisher" name="vins_move_tf_4" args="0 0 0 0 0 0 world map 20" /> -->
+	<node pkg = "tf2_ros" type = "static_transform_publisher" name = "static_test_broadcaster" args = "0 0 0 0 0 0 world map" />
+	<!-- <node pkg = "tf2_ros" type = "static_transform_publisher" name = "static_test_broadcaster1" args = "0 0 0 0 0 0 world robot" /> -->
+	<!-- Image conversion -->
+
+
+<!--    <node name="republish0" type="republish" pkg="image_transport" output="screen" args="compressed in:=/camera/left/image_raw raw out:=/camera/left/image_raw" /> -->
+
+<!--    <node name="republish1" type="republish" pkg="image_transport" output="screen" args="compressed in:=/camera/right/image_raw raw out:=/camera/right/image_raw" /> -->
+
+<!--     <node name="republish0" type="republish" pkg="image_transport" output="screen" args="compressed in:=/camera2/camera/infra1/image_rect_raw out:=/camera/left/image_raw" />  -->
+
+<!--     <node name="republish1" type="republish" pkg="image_transport" output="screen" args="compressed in:=/camera2/camera/infra2/image_rect_raw out:=/camera/right/image_raw" />  -->
+
+
+    <node name="republish0" type="republish" pkg="image_transport" output="screen" args="compressed in:=/camera/color/image_raw raw out:=/camera/color/image_raw" /> 
+
+    <node name="republish1" type="republish" pkg="image_transport" output="screen" args="compressed in:=/camera/aligned_depth_to_color/image_raw raw out:=/camera/aligned_depth_to_color/image_raw" />  
+</launch>
