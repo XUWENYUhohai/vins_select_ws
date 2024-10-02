@@ -1,0 +1,46 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/home/xuwenyu/test_ws/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/home/xuwenyu/vins_fusion_ws/src/VINS-Fusion/camera_models/include/**",
+                "/home/xuwenyu/test_ws/src/demo_action/include/**",
+                "/home/xuwenyu/test_ws/src/demo_bag/include/**",
+                "/home/xuwenyu/test_ws/src/demo_gazebo/include/**",
+                "/home/xuwenyu/test_ws/src/demo_head_source/include/**",
+                "/home/xuwenyu/test_ws/src/demo_launch/include/**",
+                "/home/xuwenyu/test_ws/src/demo_msg0/include/**",
+                "/home/xuwenyu/test_ws/src/demo_msg1/include/**",
+                "/home/xuwenyu/test_ws/src/demo_name/include/**",
+                "/home/xuwenyu/test_ws/src/demo_nodelet/include/**",
+                "/home/xuwenyu/test_ws/src/demo_param/include/**",
+                "/home/xuwenyu/test_ws/src/demo_pluginlib/include/**",
+                "/home/xuwenyu/test_ws/src/demo_reconfigure/include/**",
+                "/home/xuwenyu/test_ws/src/demo_srv/include/**",
+                "/home/xuwenyu/test_ws/src/demo_tf/include/**",
+                "/home/xuwenyu/test_ws/src/demo_time/include/**",
+                "/home/xuwenyu/test_ws/src/demo_turtle/include/**",
+                "/home/xuwenyu/test_ws/src/demo_urdf/include/**",
+                "/home/xuwenyu/test_ws/src/helloworld/include/**",
+                "/usr/include/**",
+                "/usr/include/eigen3",
+                "/opt/ros/melodic/include/**",
+                "/opt/ros/melodic/include",
+                "/usr/include/eigen3",
+                "${workspaceFolder}/thridparty/elas"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
